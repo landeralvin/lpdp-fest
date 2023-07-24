@@ -31,7 +31,7 @@ class RegisterController extends Controller
 
         
 
-        $url = sprintf("http://127.0.0.1:8000/validate/%s", $request->nik);
+        $url = sprintf("%s/validate/%s",env('APP_URL') ,$request->nik);
         $pathLoc = sprintf('storage/participants/%s.png', $request->nik);
         
         QrCode::format('png')->size(300)->generate($url, public_path($pathLoc));
