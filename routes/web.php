@@ -28,11 +28,11 @@ Route::get('pdf', function(){
 Route::get('registration', [RegisterController::class, 'index'])->name('register');
 Route::post('registration', [RegisterController::class,'store'])->name('register.store');
 
-Route::get('validate/{slug}', [ValidatorController::class, 'qrvalidate'])->name('qrvalidate');
+Route::get('validate/{slug}', [ValidatorController::class, 'qrvalidate'])->name('qrvalidate')->middleware('admin.user');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
     Route::get('scan', function(){
         return view('admin.scan');
-    });
+    })->middleware('admin.user');
 });
