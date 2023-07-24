@@ -13,11 +13,7 @@
   </head>
   <body id="index">
   <div class="container index-container">
-    <div class="content">
-      <h1>Seminar Beasiswa LPDP 2023</h1>
-      <p>Yuk daftar untuk mengikuti kegiatan Seminar Beasiswa LPDP 2023 yang mengusung tema “Indonesia Maju 2045: Sumber Daya Manusia, Industrialisasi & Kewirausahaan”!</p>
-      <p>Kamis, 27 Juli 2023<br>Pukul 09:00–16:30 WIB</p>
-      <a href="{{route('register')}}" class="register-btn">Register</a>
+    <a href="{{route('register')}}" class="register-btn">Register</a>
   </div>
     
   </div>

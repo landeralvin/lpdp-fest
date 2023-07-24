@@ -9,6 +9,11 @@
     <h3>
         Hi {{ $mailData['name'] }},
     </h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio exercitationem amet qui, veniam veritatis laudantium provident explicabo cumque consectetur, aliquam repudiandae nobis labore laboriosam quo ipsum quasi id laborum.</p>
+    <p>Kamu berhasil melakukan registrasi pada <span style="font-weight: bold;">Seminar Beasiswa LPDP 2023</span> yang mengusung tema <span style="font-weight: bold;">“Indonesia Maju 2045: Sumber Daya Manusia, Industrialisasi & Kewirausahaan”!</span>.</p>
+    <br>
+    <p>Tanggal dan Waktu : Kamis, 27 Juli 2023 pukul 08:00–17:00 WIB </p>
+    <br>
+    <p>Lokasi: Aryaduta Menteng (Tugu Tani - Jakarta).</p>
+    <br>
 </body>
 </html>
