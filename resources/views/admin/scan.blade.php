@@ -24,7 +24,7 @@
                 type: 'GET',
                 success: function(response) {
                     console.log(response.message);
-                    // alert(qrCodeMessage)
+                    alert(qrCodeMessage)
                 }
             });
         }
