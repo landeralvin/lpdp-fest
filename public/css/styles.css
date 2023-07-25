@@ -46,6 +46,7 @@ body {
   .register-btn:focus, .form-control button[type="submit"]:focus {
     background-color: #aa2205;
     box-shadow: none;
+    outline: none;
   }
   
   .register-form {
@@ -120,4 +121,10 @@ body {
 
 .content h1, .content p {
   margin: 10px 0;
+}
+
+.blur-bg {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 0, 0, 0.363);
+  border-radius: 0.25rem;
 }

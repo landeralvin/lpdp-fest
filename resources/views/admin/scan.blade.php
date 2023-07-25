@@ -20,14 +20,11 @@
 
         function onScanSuccess(qrCodeMessage) {
             $.ajax({
-                url: '/scan',
-                type: 'POST',
-                data: {
-                    data: qrCodeMessage
-                },
+                url: qrCodeMessage,
+                type: 'GET',
                 success: function(response) {
                     console.log(response.message);
-                    alert(qrCodeMessage)
+                    // alert(qrCodeMessage)
                 }
             });
         }

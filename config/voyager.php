@@ -144,7 +144,8 @@ return [
         ],
 
         'widgets' => [
-
+            'App\\Widgets\\ParticipantWidget',
+            'App\\Widgets\\AttendParticipantWidget',
         ],
 
     ],
