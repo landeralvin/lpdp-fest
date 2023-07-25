@@ -36,7 +36,7 @@ class ParticipantEmail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Participant Email',
+            subject: 'Seminar Beasiswa LPDP - Akses Peserta Hadir Luring',
         );
     }
 
