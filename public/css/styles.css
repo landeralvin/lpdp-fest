@@ -8,6 +8,12 @@ body {
     background-position: top center;
     background-size: cover;
   }
+
+  body#detail {
+    background-image: url('../storage/utils/bg-detail.png');
+    background-position: top center;
+    background-size: cover;
+  }
   
   .container {
     display: flex;
@@ -44,6 +50,23 @@ body {
   }
   
   .register-btn:focus, .form-control button[type="submit"]:focus {
+    background-color: #aa2205;
+    box-shadow: none;
+    outline: none;
+  }
+
+  .update-btn {
+    background-color: #ee6635;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  .update-btn:hover{
+    background-color: #cc4415;
+    box-shadow: 0 0 10px 2px #00000033;
+  }
+  .update-btn:focus{
     background-color: #aa2205;
     box-shadow: none;
     outline: none;
