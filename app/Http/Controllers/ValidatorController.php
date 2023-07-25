@@ -22,6 +22,6 @@ class ValidatorController extends Controller
         if ($participant) {
             $participant->update(['attend' => 1]);
         }
-        return redirect()->back()->with('success', 'Attendance updated successfully.');
+        return redirect()->back()->with('success', 'Attendance updated successfully.')->with('autoredirect', true);
     }
 }
