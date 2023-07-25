@@ -11,6 +11,9 @@ class ValidatorController extends Controller
     
     public function qrvalidate($slug){
         $participant = Participant::where('nik',$slug)->first();
+        if (!$participant){
+            abort(404);
+        }
         return view('admin.detail',['data' => $participant]);
     }
 
