@@ -19,14 +19,8 @@
         });
 
         function onScanSuccess(qrCodeMessage) {
-            $.ajax({
-                url: qrCodeMessage,
-                type: 'GET',
-                success: function(response) {
-                    console.log(response.message);
-                    alert(qrCodeMessage)
-                }
-            });
+            // Redirect to the URL obtained from the QR code
+            window.location.href = qrCodeMessage;
         }
 
         var html5QrcodeScanner = new Html5QrcodeScanner(
