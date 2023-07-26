@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 class ValidatorController extends Controller
 {
 
-    
     public function qrvalidate($slug){
         $participant = Participant::where('nik',$slug)->first();
         if (!$participant){
@@ -23,5 +22,10 @@ class ValidatorController extends Controller
             $participant->update(['attend' => 1]);
         }
         return redirect()->back()->with('success', 'Attendance updated successfully.')->with('autoredirect', true);
+    }
+
+    public function resetparticipant(){
+        $participants = Participant::where('attend', true)->update(['attend' => false]);
+        return redirect()->intended('/admin');
     }
 }

@@ -31,6 +31,7 @@ Route::post('registration', [RegisterController::class,'store'])->name('register
 Route::get('validate/{slug}', [ValidatorController::class, 'qrvalidate'])->name('qrvalidate')->middleware('admin.user');
 Route::get('/validate/{nik}/update', [ValidatorController::class, 'qrvalidateupdate'])->name('qrvalidate.update')->middleware('admin.user');
 
+Route::get('participant/reset', [ValidatorController::class, 'resetparticipant'])->middleware('admin.user');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
